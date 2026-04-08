@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vie Locale | Commune de Bellevue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { nature: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10b981', 700: '#047857', 900: '#064e3b' }, mimosa: { 400: '#fbbf24', 500: '#f59e0b' } }, fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Merriweather', 'serif'] } } } }
+    </script>
+</head>
+<body class="bg-nature-50 font-sans text-slate-800 antialiased flex flex-col min-h-screen overflow-x-hidden">
+
+    <header class="absolute top-0 left-0 w-full z-50 pt-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto bg-white/95 backdrop-blur-md rounded-full shadow-lg px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-nature-500 to-nature-700 rounded-full flex items-center justify-center text-white shadow-md">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-black text-xl text-nature-900 leading-none">Bellevue</span>
+                    <span class="text-[10px] font-bold text-slate-500 tracking-widest uppercase">Mairie & Territoire</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex space-x-8 text-sm font-bold text-slate-600">
+                <a href="index.html" class="hover:text-nature-500 transition">Accueil</a>
+                <a href="demarches.html" class="hover:text-nature-500 transition">Démarches</a>
+                <a href="vie-locale.html" class="text-nature-700 transition border-b-2 border-nature-500">Vie Locale</a>
+                <a href="tourisme.html" class="hover:text-nature-500 transition">Tourisme & Nature</a>
+            </nav>
+            <div class="hidden lg:flex gap-3">
+                <a href="demarches.html" class="bg-nature-700 hover:bg-nature-900 text-white px-6 py-2.5 rounded-full font-bold transition shadow-md">Espace Citoyen</a>
+            </div>
+            <button id="mobile-btn" class="lg:hidden text-nature-900"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden max-w-7xl mx-auto mt-4 bg-white rounded-3xl shadow-2xl p-6">
+            <div class="flex flex-col space-y-4 font-bold text-lg text-slate-800">
+                <a href="index.html" class="hover:text-nature-500">Accueil</a>
+                <a href="demarches.html" class="hover:text-nature-500">Démarches</a>
+                <a href="vie-locale.html" class="text-nature-500">Vie Locale</a>
+                <a href="tourisme.html" class="hover:text-nature-500">Tourisme & Nature</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-40 pb-20 bg-nature-900 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl font-serif font-black text-white mb-4">Vivre à Bellevue</h1>
+            <p class="text-nature-100 text-lg">Enfance, santé, sport et solidarité : tout ce qui fait vivre notre commune.</p>
+        </div>
+    </section>
+
+    <main class="flex-grow py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group" data-aos="fade-up">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-black text-nature-900 mb-4">Enfance & Jeunesse</h3>
+                        <ul class="space-y-3 text-slate-600 mb-6">
+                            <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-mimosa-500"></div> Écoles maternelle et élémentaire</li>
+                            <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-mimosa-500"></div> Menus de la restauration scolaire</li>
+                            <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-mimosa-500"></div> Centre Aéré (ALSH)</li>
+                        </ul>
+                        <a href="#" class="text-nature-700 font-bold hover:text-mimosa-500 transition">Consulter les dossiers scolaires →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden bg-nature-100 flex items-center justify-center relative">
+                        <div class="absolute inset-0 bg-nature-900/10"></div>
+                        <svg class="w-20 h-20 text-nature-600 relative z-10 transform group-hover:scale-110 transition duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-black text-nature-900 mb-4">Vie Associative</h3>
+                        <p class="text-slate-600 mb-6">Avec plus de 40 associations sportives et culturelles, Bellevue bénéficie d'un tissu associatif riche et dynamique.</p>
+                        <a href="#" class="inline-block bg-nature-50 text-nature-700 px-6 py-2 rounded-full font-bold hover:bg-mimosa-400 hover:text-white transition">Annuaire des associations</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-nature-900 text-nature-100 pt-16 pb-8 mt-auto rounded-t-[3rem] text-center text-sm">
+        <p>Mairie de Bellevue • Démonstration Technique Studio 4242</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init(); document.getElementById('mobile-btn').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('hidden'); });</script>
+</body>
+</html>

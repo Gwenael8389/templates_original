@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourisme & Nature | Commune de Bellevue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { nature: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10b981', 700: '#047857', 900: '#064e3b' }, mimosa: { 400: '#fbbf24', 500: '#f59e0b' } }, fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Merriweather', 'serif'] } } } }
+    </script>
+</head>
+<body class="bg-nature-50 font-sans text-slate-800 antialiased flex flex-col min-h-screen overflow-x-hidden">
+
+    <header class="absolute top-0 left-0 w-full z-50 pt-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto bg-white/95 backdrop-blur-md rounded-full shadow-lg px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-nature-500 to-nature-700 rounded-full flex items-center justify-center text-white shadow-md">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-black text-xl text-nature-900 leading-none">Bellevue</span>
+                    <span class="text-[10px] font-bold text-slate-500 tracking-widest uppercase">Mairie & Territoire</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex space-x-8 text-sm font-bold text-slate-600">
+                <a href="index.html" class="hover:text-nature-500 transition">Accueil</a>
+                <a href="demarches.html" class="hover:text-nature-500 transition">Démarches</a>
+                <a href="vie-locale.html" class="hover:text-nature-500 transition">Vie Locale</a>
+                <a href="tourisme.html" class="text-nature-700 transition border-b-2 border-nature-500">Tourisme & Nature</a>
+            </nav>
+            <div class="hidden lg:flex gap-3">
+                <a href="demarches.html" class="bg-nature-700 hover:bg-nature-900 text-white px-6 py-2.5 rounded-full font-bold transition shadow-md">Espace Citoyen</a>
+            </div>
+            <button id="mobile-btn" class="lg:hidden text-nature-900"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden max-w-7xl mx-auto mt-4 bg-white rounded-3xl shadow-2xl p-6">
+            <div class="flex flex-col space-y-4 font-bold text-lg text-slate-800">
+                <a href="index.html" class="hover:text-nature-500">Accueil</a>
+                <a href="demarches.html" class="hover:text-nature-500">Démarches</a>
+                <a href="vie-locale.html" class="hover:text-nature-500">Vie Locale</a>
+                <a href="tourisme.html" class="text-nature-500">Tourisme & Nature</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center transition-transform duration-10000 hover:scale-105"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-nature-900/90 to-transparent"></div>
+
+        <div class="relative z-10 text-center px-4 w-full max-w-4xl mt-20" data-aos="fade-up">
+            <span class="inline-block border-2 border-mimosa-400 text-mimosa-400 px-4 py-1.5 rounded-full text-sm font-bold tracking-widest uppercase mb-6">Découvrir notre territoire</span>
+            <h1 class="text-5xl md:text-7xl font-serif font-black text-white mb-6 drop-shadow-2xl">Le Massif & Le Mimosa</h1>
+        </div>
+    </section>
+
+    <main class="flex-grow py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32" data-aos="fade-up">
+                <div>
+                    <h2 class="text-4xl font-serif font-black text-nature-900 mb-6">Le cœur jaune de la région</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                        Notre commune abrite le plus grand territoire arboré de mimosa, une particularité unique qui fait notre renommée mondiale. De janvier à mars, nos collines se parent d'un manteau jaune éclatant, offrant un spectacle visuel et olfactif inoubliable.
+                    </p>
+                    <a href="#" class="inline-block bg-mimosa-500 text-white font-bold px-8 py-3 rounded-full hover:bg-mimosa-400 transition shadow-lg">La route du Mimosa</a>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-nature-500 rounded-[3rem] transform translate-x-4 translate-y-4 opacity-20"></div>
+                    <img src="images/mimosa.webp" class="relative rounded-[3rem] shadow-2xl object-cover h-96 w-full">
+                </div>
+            </div>
+
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-serif font-black text-nature-900 mb-4">Activités & Loisirs</h2>
+                <p class="text-lg text-slate-600">Explorez notre patrimoine à travers nos sentiers et nos traditions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-nature-700 text-xs font-bold px-3 py-1 rounded-full z-10">4 Sentiers balisés</div>
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Randonnées</h3>
+                        <p class="text-slate-500 text-sm mb-6">Des parcours pour tous les niveaux au cœur du massif forestier.</p>
+                        <a href="#" class="text-nature-700 font-bold hover:text-mimosa-500 transition">Télécharger les plans</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="images/terroir2.webp" w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Terroir & Artisans</h3>
+                        <p class="text-slate-500 text-sm mb-6">Miel, huile d'olive et artisanat d'art : partez à la rencontre de nos producteurs.</p>
+                        <a href="#" class="text-nature-700 font-bold hover:text-mimosa-500 transition">Voir l'annuaire local</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Patrimoine Bâti</h3>
+                        <p class="text-slate-500 text-sm mb-6">Visitez notre église historique et découvrez l'histoire de notre village.</p>
+                        <a href="#" class="text-nature-700 font-bold hover:text-mimosa-500 transition">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-nature-900 text-nature-100 pt-16 pb-8 mt-auto rounded-t-[3rem] text-center text-sm">
+        <p>Mairie de Bellevue • Démonstration Technique Studio 4242</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init(); document.getElementById('mobile-btn').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('hidden'); });</script>
+</body>
+</html>
